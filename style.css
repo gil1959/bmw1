@@ -1,0 +1,258 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+}
+
+nav {
+    position: sticky;
+    top: 0;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #ccc8c8;
+
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    display: flex;
+    margin-left: 10px;
+}
+
+#about {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px 10px 10px 0;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 73%;
+}
+
+aside {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px 10px 10px 0;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 25%;
+}
+
+#sejarah {
+    display: flex;
+    background-color: #fff;
+    margin: 20px 0 0 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 98%;
+}
+
+#sejarah p {
+    margin: 10px 20px 20px 20px;
+}
+
+#sejarah h1 {
+    margin: 20px 0 0 20px;
+}
+
+#spesifikasi {
+    display: flex;
+    gap: 1.5rem;
+    width: 98%;
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px 10px 0 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+#spesifikasi section p {
+    margin-bottom: 20px;
+    background-color: #ccc8c8;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+}
+
+#p1 {
+    margin-bottom: 20px;
+}
+
+#price {
+    gap: 1.5em;
+    display: flex;
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px 0 0 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 98%;
+}
+
+#price figure {
+    background-color: #ccc8c8;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin: 50px 0 0 -20px;
+}
+
+
+#contact .contact {
+    background-color: #ccc8c8;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin: 20px 0 0 10px;
+    width: 98%;
+}
+
+#contact h1 {
+    margin-left: 20px;
+}
+
+#contact form {
+    display: flex;
+    margin: 0 20px 0 20px;
+    flex-direction: column;
+}
+
+#contact label {
+    margin: 10px 0 5px;
+}
+
+#contact input {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+#contact button {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    margin-bottom: 10px;
+}
+
+#contact button:hover {
+    background-color: #a59898;
+}
+
+aside img {
+    max-width: 100%;
+    height: auto;
+    color: #fff;
+}
+
+aside figcaption {
+    margin-top: 10px;
+    font-style: italic;
+    color: #555;
+}
+
+#headaside {
+    background-color: #ccc8c8;
+    border-radius: 5px;
+}
+
+p {
+    text-align: justify;
+}
+
+figcaption {
+    text-align: justify;
+}
+
+#pfooter {
+    text-align: center;
+}
+
+#figaside {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#h2aside {
+    margin-left: 10px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    margin-top: 20px;
+}
+
+footer p {
+    font-size: 14px;
+}
+
+@media (max-width: 768px) {
+    header nav ul {
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #price {
+        flex-direction: column;
+        lign-items: center;
+
+    }
+
+    .container {
+        flex-direction: column;
+        lign-items: center;
+    }
+
+    #about {
+        width: 100%;
+    }
+
+    aside {
+        width: 100%;
+    }
+
+    #contact .contact {
+        padding: 0 20px;
+    }
+}
